@@ -2,8 +2,7 @@ if exists("b:current_syntax")
   finish
 endif
 
-syn match hyperLink "\*[^"*|]\+\*\s"he=e-1 contains=linkStar
-syn match hyperLink "\*[^"*|]\+\*$" contains=linkStar
+syn match hyperLink "\*[^"*|]\+\*" contains=linkStar
 
 syn match linkStar contained "\*" conceal
 
